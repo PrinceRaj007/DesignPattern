@@ -1,4 +1,4 @@
-package AbstractFactory;
+package CreationalDesignPattern.AbstractFactory;
 
 class AbstractFactoryClient {
 	public static void main(String[] args) {

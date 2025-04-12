@@ -1,4 +1,4 @@
-package Builder;
+package CreationalDesignPattern.Builder;
 
 class BuilderClient {
 	public static void main(String[] args) {

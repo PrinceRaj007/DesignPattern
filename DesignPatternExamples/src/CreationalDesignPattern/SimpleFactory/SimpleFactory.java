@@ -1,4 +1,4 @@
-package SimpleFactory;
+package CreationalDesignPattern.SimpleFactory;
 
 class SimpleFactoryClient {
 	public static void main(String[] args) {

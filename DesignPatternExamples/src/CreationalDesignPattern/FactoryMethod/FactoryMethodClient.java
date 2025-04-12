@@ -1,4 +1,4 @@
-package FactoryMethod;
+package CreationalDesignPattern.FactoryMethod;
 
 public class FactoryMethodClient {
 	public static void main(String[] args) {

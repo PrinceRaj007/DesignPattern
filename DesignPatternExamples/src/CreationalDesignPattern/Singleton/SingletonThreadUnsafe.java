@@ -1,4 +1,4 @@
-package Singleton;
+package CreationalDesignPattern.Singleton;
 
 public class SingletonThreadUnsafe {
 
