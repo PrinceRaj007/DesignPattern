@@ -1,5 +1,8 @@
 package StructuralDesignPattern.Adapter;
 
+/* Adaptee(Old class that Client do not understand) 
+ * Target(New Interface that Client understand and expect its child objects) 
+ * Adapter (implements Target and performs the client expected actions using adaptee/old class methods )*/
 class AdaterClient {
 
 	public static void main(String[] args) {
