@@ -10,30 +10,39 @@ class AdaterClient {
 	}
 
 }
-class OldMedialPlayer{
+
+// Adaptee Class
+class OldMedialPlayer {
 	public void playMp4(String fileName) {
-		System.out.println("Playing MP4 video from file: "+fileName);
+		System.out.println("Playing MP4 video from file: " + fileName);
 	}
+
 	public void play4k(String fileName) {
-		System.out.println("Playing 4K video from file: "+fileName);
+		System.out.println("Playing 4K video from file: " + fileName);
 	}
 }
-interface MediaPlayer{
+
+// Target Interface
+interface MediaPlayer {
 	public void playMedia(String mediaType, String file);
 }
-class NewMediaPlayerAdapter implements MediaPlayer{
+
+// Adapter Class
+class NewMediaPlayerAdapter implements MediaPlayer {
 	OldMedialPlayer oldMediaPlayer;
+
 	public NewMediaPlayerAdapter(OldMedialPlayer oldMediaPlayer) {
 		this.oldMediaPlayer = oldMediaPlayer;
 	}
+
 	@Override
 	public void playMedia(String mediaType, String file) {
-		if("mp4".equalsIgnoreCase(mediaType)) {
+		if ("mp4".equalsIgnoreCase(mediaType)) {
 			oldMediaPlayer.playMp4(file);
-		}else if("4k".equalsIgnoreCase(mediaType)) {
+		} else if ("4k".equalsIgnoreCase(mediaType)) {
 			oldMediaPlayer.play4k(file);
-		}else {
-			System.out.println("UnSupported Media type: "+mediaType);
+		} else {
+			System.out.println("UnSupported Media type: " + mediaType);
 		}
 	}
 }
