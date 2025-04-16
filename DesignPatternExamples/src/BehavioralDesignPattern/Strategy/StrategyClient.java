@@ -5,7 +5,7 @@ public class StrategyClient {
 	public static void main(String[] args) {
 		ShoppingCart shoppingCart1 = new ShoppingCart(new CrediCardPayment());
 		shoppingCart1.checkOut();
-		ShoppingCart shoppingCart2 = new ShoppingCart(new CrediCardPayment());
+		ShoppingCart shoppingCart2 = new ShoppingCart(new PayPalPayment());
 		shoppingCart2.checkOut();
 	}
 
